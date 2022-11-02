@@ -1,0 +1,17 @@
+{
+  "name": "@template/prettier-config",
+  "version": "1.0.0",
+  "description": "Prettier config with packages",
+  "license": "MIT",
+  "author": "CoolColdUK@github",
+  "main": "index.js",
+  "scripts": {
+    "lint": "exit 0"
+  },
+  "dependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier-package-json": "^2.7.0",
+    "prettier": "^2.7.1"
+  }
+}
