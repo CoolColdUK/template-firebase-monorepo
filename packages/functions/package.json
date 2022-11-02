@@ -8,9 +8,10 @@
     "deploy": "firebase deploy --only functions",
     "lint": "eslint --ext .js,.ts .",
     "logs": "firebase functions:log",
-    "serve": "npm run build && firebase emulators:start --only functions",
+    "serve": "firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
-    "start": "npm run shell"
+    "start": "npm run shell",
+    "watch": "nodemon --watch src -e ts,tsx -x \"npm run build\""
   },
   "dependencies": {
     "firebase-admin": "^10.0.2",
