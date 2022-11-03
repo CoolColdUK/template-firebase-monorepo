@@ -24,7 +24,8 @@ module.exports = {
     },
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json', //required for "type-aware linting"
+    // tsconfigRootDir: __dirname,
+    project: '**/tsconfig.json', //required for "type-aware linting"
   },
   rules: {
     'import/prefer-default-export': 'off',
