@@ -17,7 +17,6 @@
     "fn:serve": "lerna exec --scope=@template/functions -- npm run serve",
     "fn:watch": "lerna exec --scope=@template/functions -- npm run watch",
     "format": "prettier --ignore-unknown --write ./packages/**/*.{ts,tsx}",
-    "postinstall": "lerna bootstrap --force-local --hoist --concurrency=1",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,9 +26,9 @@
   ],
   "dependencies": {
     "@template/prettier-config": "^1.0.0",
-    "firebase-tools": "^11.24.1",
-    "lerna": "^6.5.1",
-    "nodemon": "^2.0.21"
+    "firebase-tools": "^13.1.0",
+    "lerna": "^8.0.2",
+    "nodemon": "^3.0.3"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
