@@ -4,19 +4,12 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "homepage": "https://github.com/CoolColdUK/template-firebase-monorepo#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CoolColdUK/template-firebase-monorepo.git"
-  },
-  "bugs": {
-    "url": "https://github.com/CoolColdUK/template-firebase-monorepo/issues"
-  },
   "main": "index.js",
   "scripts": {
     "fn:serve": "lerna exec --scope=@template/functions -- npm run serve",
     "fn:watch": "lerna exec --scope=@template/functions -- npm run watch",
     "format": "prettier --ignore-unknown --write ./packages/**/*.{ts,tsx}",
+    "lint": "lerna exec -- npm run lint",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
