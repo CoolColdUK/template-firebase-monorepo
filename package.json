@@ -9,6 +9,7 @@
     "fn:serve": "lerna exec --scope=@template/functions -- npm run serve",
     "fn:watch": "lerna exec --scope=@template/functions -- npm run watch",
     "format": "prettier --ignore-unknown --write ./packages/**/*.{ts,tsx}",
+    "gen": "lerna run codegen",
     "lint": "lerna exec -- npm run lint",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"

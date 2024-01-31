@@ -5,6 +5,7 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
+    "codegen": "graphql-codegen && eslint --fix ./src/__generated__/*.ts",
     "deploy": "firebase deploy --only functions",
     "lint": "eslint --ext .js,.ts .",
     "logs": "firebase functions:log",
@@ -15,14 +16,23 @@
   },
   "dependencies": {
     "@apollo/server": "^4.10.0",
+    "@apollo/subgraph": "^2.7.1",
+    "@graphql-tools/merge": "^9.0.1",
+    "@graphql-tools/schema": "^10.0.2",
+    "@graphql-tools/utils": "^10.0.13",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "firebase-admin": "^11.11.1",
     "firebase-functions": "^4.6.0",
-    "graphql": "^16.8.1"
+    "graphql": "^16.8.1",
+    "graphql-config": "^5.0.3",
+    "graphql-tag": "^2.12.6"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/typescript": "^4.0.1",
+    "@graphql-codegen/typescript-resolvers": "^4.0.1",
     "@template/eslint-config": "^1.0.0",
     "@template/jest-config": "^1.0.0",
     "@template/ts-config": "^1.0.0",
