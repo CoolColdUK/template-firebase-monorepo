@@ -1,21 +1,15 @@
 {
-  "private": false,
-  "name": "@algo/web",
-  "version": "1.0.0",
-  "license": "ISC",
-  "main": "dist/index.js",
+  "private": true,
+  "name": "web",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "build": "tsc && vite build",
-    "check": "echo need fix for web",
     "codegen": "graphql-codegen",
-    "lint": "eslint ./src/**/*.{ts,tsx}",
-    "lint:fix": "eslint --fix ./src/**/*.{ts,tsx}",
-    "start": "vite",
-    "test": "jest",
-    "test:int": "jest --testMatch **/*.spec.ts",
-    "test:unit": "jest --testMatch **/*.test.ts"
+    "dev": "vite",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "types": "dist/index.d.ts",
   "dependencies": {
     "@apollo/client": "^3.9.0",
     "@emotion/react": "^11.11.3",
@@ -39,8 +33,6 @@
     "react-router": "^6.21.3",
     "react-router-dom": "^6.21.3",
     "uuid": "^9.0.1",
-    "vite": "^5.0.12",
-    "vite-plugin-pwa": "^0.16.5",
     "web-vitals": "^3.5.2"
   },
   "devDependencies": {
@@ -52,30 +44,15 @@
     "@types/js-cookie": "^3.0.6",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
-    "@types/uuid": "^9.0.8"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "@algo/eslint-config/react"
-    ],
-    "ignorePatterns": [
-      "__generated__"
-    ]
-  },
-  "jest": {
-    "preset": "@algo/jest-config",
-    "rootDir": "./src"
+    "@types/uuid": "^9.0.8",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-plugin-pwa": "^0.16.7"
   }
 }
