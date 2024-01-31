@@ -1,0 +1,14 @@
+{
+  "extends": "@template/ts-config",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "rootDir": ".",
+    // "noEmit": true,
+    // "noPropertyAccessFromIndexSignature": true,
+    "outDir": "build",
+    "baseUrl": "./src"
+  },
+  "include": ["src/**/*", "node_modules/vite-plugin-pwa/client.d.ts"]
+}
